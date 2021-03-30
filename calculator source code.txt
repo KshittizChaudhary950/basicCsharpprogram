@@ -19,7 +19,7 @@ namespace calculators
         {
             results = num1 - num2;
             Console.WriteLine("The difference of two numbers is:" + results);
-            Console.ReadLine();
+            Console.ReadLine(); 
 
         }
 
@@ -60,7 +60,7 @@ namespace calculators
             obj.num2= Convert.ToInt32(Console.ReadLine());
 
             obj.Add(); // call method 
-            obj.substract();
+            obj.substract(); // call method
            
             obj.multiply();
             obj.Divide();
