@@ -1,0 +1,70 @@
+using System;
+
+namespace calculators
+{
+    class calculators
+    {
+        int num1;
+        int num2;
+        int results;
+
+        public void Add()
+        {
+            results = num1 + num2;
+            Console.WriteLine("The sums of two numbers is:"+results);
+            Console.ReadLine();
+
+        }
+        public void substract()
+        {
+            results = num1 - num2;
+            Console.WriteLine("The difference of two numbers is:" + results);
+            Console.ReadLine();
+
+        }
+
+        public void multiply()
+        {
+            results = num1 * num2;
+            Console.WriteLine("The multiply of two numbers is:" + results);
+            Console.ReadLine();
+
+        }
+        public void Divide()
+        {
+
+            if (num1 <= 0 || num2 <= 0)
+            {
+                Console.WriteLine("you can't use negative value");
+            }
+            else
+            {
+                results = num1 / num2;
+                Console.WriteLine("The divisions of two numbers is:" + results);
+                Console.ReadLine();
+            }
+
+
+        }
+
+
+
+        public static void Main(string[] args)
+        {
+            calculators obj = new calculators();
+
+            Console.WriteLine("Enter the first number ");
+             obj.num1 = Convert.ToInt32(Console.ReadLine()); // taking value from user 
+
+            Console.WriteLine("Enter the second number ");
+            obj.num2= Convert.ToInt32(Console.ReadLine());
+
+            obj.Add(); // call method 
+            obj.substract();
+           
+            obj.multiply();
+            obj.Divide();
+
+        }
+    }
+}
